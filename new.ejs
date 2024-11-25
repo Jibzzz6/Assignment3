@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Assignment</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Assignment Tracker!</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/assignments">All Assignments</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Add New Assignment</h2>
+    <form action="/assignments" method="POST">
+      <div class="form-group">
+        <label for="name">Assignment Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter assignment name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" placeholder="Enter assignment description" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Add Assignment</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 Assignment Tracker</p>
+  </footer>
+</body>
+</html>
